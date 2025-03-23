@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tess Allerding's Professional Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="header">
-            <img class="logo" src="images/logo.png" alt="Stylized drawing of Tess in a purple plaid shirt">
-            <h1>Tess Allerding</h1>
-        </div>
-        <nav>
-            <ul class="nav">
-                <li class="navlist"><a href= "index.html">Home</a></li>
-                <li class="navlist"><a href= "about.html">About</a></li>
-                <li class="navlist"><a href= "contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Contact</h2>
-            <div class="contact-main-container">
-                <div class="contact-box">
-                    <p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tess Allerding's Professional Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img class="logo" src="images/logo.png" alt="Stylized drawing of Tess in a purple plaid shirt">
+                <h1>Tess Allerding</h1>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="navlist"><a href= "index.html">Home</a></li>
+                    <li class="navlist"><a href= "about.html">About</a></li>
+                    <li class="navlist"><a href= "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Contact</h2>
+                <div class="contact-main-container">
+                    <div class="contact-box">
+                        <p>
                         I would love to hear from you! Please feel free to connect with me using the links below!
-                    </p>
-                </div>
-                <div class="contact-sub-container">
-                    <div class="contact-box">
-                        <a href="mailto:ga7015@wayne.edu">Wayne State University Email</a>
+                        </p>
+                    </div>   
+                    <div>
+                        <form action="https://formspree.io/f/xblgoekz" method="post" data-validate>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" class="form-input" required>
+                       
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="_replyto" class="form-input" required>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+
+                        <button type="submit">Submit</button>
+                        </form>
                     </div>
-                    <div class="contact-box">
-                        <a href="mailto:tallerding@hastingspubliclibrary.org">Hastings Public Library Email</a>
+                    <div class="contact-sub-container">
+                        <div class="contact-box">
+                            <a href="https://www.instagram.com/tessallerding" target="_blank">Check out my photos!</a>
+                        </div>
+                        <div class="contact-box">
+                            <a href="https://www.linkedin.com/in/tess-allerding-aaaaa791" target="_blank">See what I'm up to at work!</a>
+                        </div>
+                        <div class="contact-box">
+                            <a href="https://www.goodreads.com/user/show/45855830-tess-allerding" target="_blank">Follow me on Goodreads!</a>
+                        </div>
+                        <div class="contact-box">
+                            <a href="https://app.thestorygraph.com/profile/tallerding" target="_blank">Follow me on The StoryGraph!</a>
+                        </div>
                     </div>
-                    <div class="contact-box">
-                        <a href="https://www.instagram.com/tessallerding" target="_blank">Check out my photos!</a>
-                    </div>
-                    <div class="contact-box">
-                        <a href="https://www.linkedin.com/in/tess-allerding-aaaaa791" target="_blank">See what I'm up to at work!</a>
-                    </div>
-                    <div class="contact-box">
-                        <a href="https://www.goodreads.com/user/show/45855830-tess-allerding" target="_blank">Follow me on Goodreads!</a>
-                    </div>
-                    <div class="contact-box">
-                        <a href="https://app.thestorygraph.com/profile/tallerding" target="_blank">Follow me on The StoryGraph!</a>
-                    </div>
-                </div>
-        </div>        
-    </main>
-</body>
-<footer>
-    <div>
-        <p class="footer">
-            &copy; Teressa Allerding 2025
-        </p>
-    </div>
-</footer>
+                </div>        
+        </main>
+        <footer>
+            <div>
+                <p class="footer">
+                &copy; Teressa Allerding 2025
+                </p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/validate@2.2.0/dist/validate.min.js"></script>
+        <script>validate.init();</script>
+    </body>
 </html>
