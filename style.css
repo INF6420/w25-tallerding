@@ -91,13 +91,17 @@ ul {
     padding-left: 12%;
 }
 .video {
-    padding-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;  
 }
 .welcome-text {
     width: fit-content;
     border: 2px solid #6F7608;
     font-size: 14pt;
     padding: 1%;
+    margin: 2%;
+    min-width: 50%;
 }
 .first-container {
     display: flex;
@@ -161,15 +165,15 @@ ul {
     flex-wrap: nowrap;
     align-items: center;
     padding-left: 2%;
-    gap: 18%;
+    gap: 15%;
 }
 .victor {
-    min-width: 150%;
-    min-height: 150%;
+    min-width: 138%;
+    min-height: 138%;
 }
 .kyle {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 85%;
+    max-height: 85%;
 }
 .work-text {
     width: fit-content;
@@ -177,7 +181,7 @@ ul {
     font-size: 14pt;
     padding: 1%;
     margin: 2%;
-    min-width: 40%;
+    min-width: 50%;
 }
 .contact-sub-container {
     display: flex;
@@ -188,6 +192,48 @@ ul {
     width: fit-content;
     border: 2px solid #6F7608;
     font-size: 14pt;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+label {
+    display: block;
+    font-size: 16pt;
+    font-weight: 700;
+}
+.form-input {
+    border: 2px solid #6F7608;
+    font-size: 16pt;
+    font-weight: 700px;
+    padding: 1%;
+    margin-bottom: 1%;
+    width: 100%; 
+}
+.form-input:focus {
+    outline: none;
+    border: 2px solid goldenrod;
+}
+[type="submit"] {
+    background: goldenrod;
+    width: 100%;
+    font-size: 18pt;
+    font-weight: 1000;
+    cursor: pointer;
+}
+[type="submit"]:hover,
+[type="submit"]:focus {
+    background: rgb(159, 116, 8);
+}
+textarea {
+    resize: vertical;
+}
+.error {
+    border-color: red
+}
+.error-message {
+    color: red
 }
 footer {
     font-size: 10pt;
