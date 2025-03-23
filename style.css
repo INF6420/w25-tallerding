@@ -193,6 +193,42 @@ ul {
     border: 2px solid #6F7608;
     font-size: 14pt;
 }
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+label {
+    display: block;
+    font-size: 16pt;
+    font-weight: 700;
+}
+.form-input {
+    border: 2px solid #6F7608;
+    font-size: 16pt;
+    font-weight: 700px;
+    padding: 1%;
+    margin-bottom: 1%;
+    width: 100%; 
+}
+.form-input:focus {
+    outline: none;
+    border: 2px solid goldenrod;
+}
+[type="submit"] {
+    background: goldenrod;
+    width: 100%;
+    font-size: 18pt;
+    font-weight: 1000;
+    cursor: pointer;
+}
+[type="submit"]:hover,
+[type="submit"]:focus {
+    background: rgb(159, 116, 8);
+}
+textarea {
+    resize: vertical;
+}
 .error {
     border-color: red
 }
