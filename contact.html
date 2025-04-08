@@ -28,13 +28,21 @@
                         I would love to hear from you! Please feel free to connect with me using the links below!
                     </p>
                 </div>
-                <div class="contact-sub-container">
-                    <div class="contact-box">
-                        <a href="mailto:ga7015@wayne.edu">Wayne State University Email</a>
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/xblgoekz" method="post" data-validate>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" class="form-input" required>
+                       
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="_replyto" class="form-input" required>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+
+                        <button type="submit">Submit</button>
+                        </form>
                     </div>
-                    <div class="contact-box">
-                        <a href="mailto:tallerding@hastingspubliclibrary.org">Hastings Public Library Email</a>
-                    </div>
+                    <div class="contact-sub-container">
                     <div class="contact-box">
                         <a href="https://www.instagram.com/tessallerding" target="_blank">Check out my photos!</a>
                     </div>
@@ -50,12 +58,16 @@
                 </div>
         </div>        
     </main>
+    <footer>
+        <div>
+            <p class="footer">
+                &copy; Teressa Allerding 2025
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/validate@2.2.0/dist/validate.min.js"></script>
+    <script>
+        validate.init();
+    </script>
 </body>
-<footer>
-    <div>
-        <p class="footer">
-            &copy; Teressa Allerding 2025
-        </p>
-    </div>
-</footer>
 </html>
