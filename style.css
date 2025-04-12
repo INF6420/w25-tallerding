@@ -48,7 +48,6 @@ img {
 }
 nav {
     position: relative;
-    border: 2px solid #6F7608;
 }
 ul {
     list-style-position: inside;
@@ -68,8 +67,8 @@ ul {
 }
 .logo {
     position: relative;
-    max-width: 11%;
-    max-height: 11%;
+    width: 10em;
+    height: 9em;
     padding-right: 1%;
 }
 .index-main-container {
@@ -86,9 +85,11 @@ ul {
     padding-right: 2%;
 }
 .headshot {
-    max-width: 75%;
-    max-height: 75%;
-    padding-left: 12%;
+    padding: 12%;
+    object-fit: fill;
+    height: 50em;
+    width: 70em;
+    aspect-ratio: 75;
 }
 .video {
     display: flex;
@@ -117,17 +118,15 @@ ul {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding-left: 2%;
-    padding-right: 2%;
-    max-width: 25%;
-    max-height: 25%;
+    height: 30em;
+    width: 30em;
+    padding: 2%;
 }
 .introduction-text {
     display: flex;
     width: fit-content;
     border: 2px solid #6F7608;
     font-size: 14pt;
-    min-width: 55%;
     padding: 1%;
     align-items: baseline;
     flex-direction: column;
@@ -137,14 +136,15 @@ ul {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
+    margin: 1em;
 }
 .second-container-photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2%;
-    max-height: 50%;
-    max-width: 50%;
-    padding-right: 2%;
+    padding: 2%;
+    height: 25em;
+    width: 100em;
 }
 .education-text {
     width: fit-content;
@@ -152,7 +152,6 @@ ul {
     font-size: 14pt;
     padding: 1%;
     margin: 2%;
-    max-width: 55%;
 }
 .third-container {
     display: flex;
@@ -165,15 +164,9 @@ ul {
     flex-wrap: nowrap;
     align-items: center;
     padding-left: 2%;
-    gap: 15%;
-}
-.victor {
-    min-width: 138%;
-    min-height: 138%;
-}
-.kyle {
-    max-width: 85%;
-    max-height: 85%;
+    gap: 5%;
+    height: auto;
+    width: auto;
 }
 .work-text {
     width: fit-content;
@@ -189,9 +182,8 @@ ul {
     justify-content: space-evenly;
 }
 .contact-box {
-    width: fit-content;
-    border: 2px solid #6F7608;
     font-size: 14pt;
+    text-align: center;
 }
 .contact-form {
     display: flex;
@@ -236,6 +228,16 @@ textarea {
     color: red
 }
 footer {
-    font-size: 10pt;
-    border: 2px solid #6F7608; 
+    font-size: 10pt; 
+}
+hr {
+    border: 1px solid #6F7608;
+}
+@media (max-width: 768px) {
+    .index-main-container, .first-container, .first-container-photos, .second-container, .second-container-photos, .third-container, .third-container-photos     {
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+    }
+
 }
